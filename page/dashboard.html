@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNova Store - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <div class="logo">
+        <h2>TechNova Store</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./dashborad.html">Product</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./singup.html" class="signup-btn">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <hr>
+
+    <!-- ===== DASHBOARD OVERVIEW ===== -->
+    <section>
+        <h3>Dashboard Overview</h3>
+
+        <p><strong>Total Products:</strong> 15</p>
+        <p><strong>Total Categories:</strong> 6</p>
+        <p><strong>Total Orders:</strong> 28</p>
+        <p><strong>Total Users:</strong> 50</p>
+    </section>
+
+    <hr>
+
+    <!-- ===== ADD PRODUCT FORM ===== -->
+    <section>
+        <h3>Add New Product</h3>
+
+        <form>
+            <label>Product Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Price:</label><br>
+            <input type="number"><br><br>
+
+            <label>Category:</label><br>
+            <select>
+                <option>Mobiles</option>
+                <option>Laptops</option>
+                <option>Headphones</option>
+                <option>Accessories</option>
+                <option>Smart TV</option>
+            </select><br><br>
+
+            <label>Stock Quantity:</label><br>
+            <input type="number"><br><br>
+
+            <label>Upload Image:</label><br>
+            <input type="file"><br><br>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- ===== PRODUCT TABLE ===== -->
+    <section>
+        <h3>Product List</h3>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>iPhone</td>
+                <td>₹79,999</td>
+                <td>Mobiles</td>
+                <td>10</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Laptop</td>
+                <td>₹49,999</td>
+                <td>Laptops</td>
+                <td>5</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+</body>
+</html>
