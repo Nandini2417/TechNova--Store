@@ -1,24 +1,82 @@
-        .login-box {
-    width: 300px;
-    background: white;
-    padding: 20px;
-    margin: 80px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+/* ================= LOGIN & SIGNIN FORM ================= */
+
+.login-container,
+.signin-container {
+    width: 350px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.login-container h2,
+.signin-container h2 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.login-box input {
-    width: 90%;
-    padding: 8px;
-    margin: 10px 0;
+/* Input Box Styling */
+.input-box {
+    margin-bottom: 15px;
 }
 
-.login-box button {
+.input-box label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #444;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* Input Focus Effect */
+.input-box input:focus {
+    border-color: #2874f0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40,116,240,0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
     background-color: #2874f0;
     color: white;
     border: none;
-    padding: 10px;
-    width: 95%;
+    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #1a5ed8;
+}
+
+/* Signin Button in Navbar */
+.signin-btn {
+    background-color: #ff6600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white !important;
+}
+
+.signin-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Page Background */
+body {
+    background-color: #f1f3f6;
+    font-family: Arial, sans-serif;
 }
