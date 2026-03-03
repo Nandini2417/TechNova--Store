@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electronics Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Electronics Store</h1>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h2>Laptop</h2>
+            <p>Price: ₹45,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/mobile.jpg" alt="Mobile">
+            <h2>Smartphone</h2>
+            <p>Price: ₹20,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/headphone.jpg" alt="Headphones">
+            <h2>Headphones</h2>
+            <p>Price: ₹2,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
