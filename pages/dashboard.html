@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechNova Store - Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./../css/dashboard.css">
+    <title>TechNova Store - Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
 
@@ -14,69 +14,66 @@
         <h2>TechNova Store</h2>
     </div>
     <nav>
-        <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./dashborad.html">Product</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./singin.html" class="signin-btn">Sign in</a></li>
-        </ul>
+       <ul class="nav-links">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./../pages/product.html">Product</a></li>
+          <li><a href="./../pages/categories.html">Categories</a></li>
+          <li><a href="./../pages/about.html">About</a></li>
+          <li><a href="./../pages/contact.html">Contact</a></li>
+          <li><a href="./../pages/login.html">Login</a></li>
+          <a href="./../pages/singin.html" class="signin-btn">Sign in</a> </li>
+          </ul>
     </nav>
 </header>
 <hr>
 
-    <!-- ===== DASHBOARD OVERVIEW ===== -->
-    <section>
-        <h3>Dashboard Overview</h3>
+<!-- ===== DASHBOARD OVERVIEW ===== -->
+<section class="dashboard-overview">
+    <h3>Dashboard Overview</h3>
+    <p><strong>Total Products:</strong> 15</p>
+    <p><strong>Total Categories:</strong> 6</p>
+    <p><strong>Total Orders:</strong> 28</p>
+    <p><strong>Total Users:</strong> 50</p>
+</section>
 
-        <p><strong>Total Products:</strong> 15</p>
-        <p><strong>Total Categories:</strong> 6</p>
-        <p><strong>Total Orders:</strong> 28</p>
-        <p><strong>Total Users:</strong> 50</p>
-    </section>
+<hr>
 
-    <hr>
+<!-- ===== ADD PRODUCT FORM ===== -->
+<section class="add-product">
+    <h3>Add New Product</h3>
+    <form method="post" enctype="multipart/form-data">
+        <label>Product Name:</label><br>
+        <input type="text" name="product_name" required><br><br>
 
-    <!-- ===== ADD PRODUCT FORM ===== -->
-    <section>
-        <h3>Add New Product</h3>
+        <label>Price:</label><br>
+        <input type="number" name="price" required><br><br>
 
-        <form>
-            <label>Product Name:</label><br>
-            <input type="text"><br><br>
+        <label>Category:</label><br>
+        <select name="category" required>
+            <option>Mobiles</option>
+            <option>Laptops</option>
+            <option>Headphones</option>
+            <option>Accessories</option>
+            <option>Smart TV</option>
+        </select><br><br>
 
-            <label>Price:</label><br>
-            <input type="number"><br><br>
+        <label>Stock Quantity:</label><br>
+        <input type="number" name="stock" required><br><br>
 
-            <label>Category:</label><br>
-            <select>
-                <option>Mobiles</option>
-                <option>Laptops</option>
-                <option>Headphones</option>
-                <option>Accessories</option>
-                <option>Smart TV</option>
-            </select><br><br>
+        <label>Upload Image:</label><br>
+        <input type="file" name="image" accept="image/*"><br><br>
 
-            <label>Stock Quantity:</label><br>
-            <input type="number"><br><br>
+        <button type="submit">Add Product</button>
+    </form>
+</section>
 
-            <label>Upload Image:</label><br>
-            <input type="file"><br><br>
+<hr>
 
-            <button type="submit">Add Product</button>
-        </form>
-    </section>
-
-    <hr>
-
-    <!-- ===== PRODUCT TABLE ===== -->
-    <section>
-        <h3>Product List</h3>
-
-        <table border="1" cellpadding="10">
+<!-- ===== PRODUCT TABLE ===== -->
+<section class="product-list">
+    <h3>Product List</h3>
+    <table>
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>Product Name</th>
@@ -85,7 +82,8 @@
                 <th>Stock</th>
                 <th>Action</th>
             </tr>
-
+        </thead>
+        <tbody>
             <tr>
                 <td>1</td>
                 <td>iPhone</td>
@@ -97,7 +95,6 @@
                     <button>Delete</button>
                 </td>
             </tr>
-
             <tr>
                 <td>2</td>
                 <td>Laptop</td>
@@ -109,8 +106,9 @@
                     <button>Delete</button>
                 </td>
             </tr>
+        </tbody>
+    </table>
+</section>
 
-        </table>
-    </section>
 </body>
 </html>

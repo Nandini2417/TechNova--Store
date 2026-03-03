@@ -1,148 +1,166 @@
-/* ================= GLOBAL ================= */
+/* ================= GENERAL STYLES ================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f9;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* ================= NAVBAR ================= */
 header {
-    background-color: #003366;
-    color: white;
-    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 30px;
+    background-color: #1e1e2f;
+    color: white;
 }
 
-.logo h2 {
+header .logo h2 {
     margin: 0;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
+.nav-links li a {
     color: white;
-    font-weight: 500;
-    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
+.nav-links li a:hover {
+    background-color: #3e3e5e;
 }
 
 .signin-btn {
-    background-color: #ffcc00;
-    color: #003366;
-    padding: 6px 12px;
-    border-radius: 5px;
-}
-
-/* ================= SECTIONS ================= */
-section {
-    background: white;
-    margin: 30px 40px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h3 {
-    margin-top: 0;
-    color: #003366;
-}
-
-/* ================= FORM ================= */
-form input,
-form select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #003366;
+    background-color: #ff6b6b;
     color: white;
-    padding: 10px 18px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.signin-btn:hover {
+    background-color: #ff4c4c;
+}
+
+/* ================= DASHBOARD OVERVIEW ================= */
+.dashboard-overview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    gap: 20px;
+}
+
+.dashboard-overview p {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin: 0;
+}
+
+/* ================= ADD PRODUCT FORM ================= */
+.add-product {
+    margin: 20px 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.add-product form input,
+.add-product form select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.add-product form button {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: #0055aa;
+.add-product form button:hover {
+    background-color: #3e3e5e;
 }
 
-/* ================= TABLE ================= */
-table {
+/* ================= PRODUCT TABLE ================= */
+.product-list {
+    margin: 20px 30px;
+    overflow-x: auto;
+}
+
+.product-list table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-table th {
-    background-color: #003366;
+.product-list th, .product-list td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-list th {
+    background-color: #1e1e2f;
     color: white;
 }
 
-table th,
-table td {
-    padding: 10px;
-    text-align: center;
+.product-list tr:hover {
+    background-color: #f1f1f1;
 }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-table button {
+.product-list button {
+    background-color: #ff6b6b;
+    color: white;
     padding: 5px 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    margin: 0 2px;
+    transition: background-color 0.3s;
 }
 
-table button:first-child {
-    background-color: #28a745;
-    color: white;
-}
-
-table button:last-child {
-    background-color: #dc3545;
-    color: white;
-}
-
-table button:hover {
-    opacity: 0.8;
+.product-list button:hover {
+    background-color: #ff4c4c;
 }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul {
+    .dashboard-overview {
         flex-direction: column;
         align-items: center;
     }
 
-    section {
-        margin: 20px;
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
