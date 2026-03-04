@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>TechNova Store- Home</title>
+    <title>TechNova Store - products</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/product.css" />
   </head>
@@ -13,33 +13,37 @@
         <h2>TechNova Store</h2>
       </div>
       <nav>
-        <ul class="nav-links">
+         <ul class="nav-links">
           <li><a href="./../index.html">Home</a></li>
-          <li><a href="./../pages/product.html">Product</a></li>
-          <li><a href="./../pages/categories.html">Categories</a></li>
-          <li><a href="./../pages/about.html">About</a></li>
-          <li><a href="./../pages/contact.html">Contact</a></li>
-          <li><a href="./../pages/login.html">Login</a></li>
-            <a href="./../pages/singin.html" class="signin-btn">Sign in</a>
-          </li>
+          <li><a href="./product.html">Product</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./categories.html">Categories</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signin.html" class="signin-btn">Sign in</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-        <section class="product-container" aria-label="Product List">
+        <section class="product-container">
 
             <!-- Product 1 -->
             <article class="product-card">
-                <img src="./../images/mobile phone.jpeg" alt="iPhone">
+                <img src="./../images/mobilephone.jpeg" alt="iPhone">
                 <h2 class="product-name">iPhone</h2>
                 <p class="product-rating">⭐⭐⭐⭐☆ (4.5)</p>
                 <p class="product-desc">Latest iPhone with advanced camera and performance.</p>
                 <p class="product-price">₹79,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                    <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -52,22 +56,30 @@
                 <p class="product-price">₹49,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                    <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
             <!-- Product 3 -->
             <article class="product-card">
-                <img src="./../images/cctv camera.avif" alt="CCTV Camera">
+                <img src="./../images/cctvcamera.avif" alt="CCTV Camera">
                 <h2 class="product-name">CCTV Camera</h2>
                 <p class="product-rating">⭐⭐⭐⭐ (4.3)</p>
                 <p class="product-desc">High quality surveillance camera for home and office.</p>
                 <p class="product-price">₹3,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+             <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -80,22 +92,30 @@
                 <p class="product-price">₹29,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                    <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
             <!-- Product 5 -->
             <article class="product-card">
-                <img src="./../images/washing machine.webp" alt="Washing Machine">
+                <img src="./../images/washingmachie.webp" alt="Washing Machine">
                 <h2 class="product-name">Washing Machine</h2>
                 <p class="product-rating">⭐⭐⭐⭐ (4.2)</p>
                 <p class="product-desc">Front load washing machine with energy saving features.</p>
                 <p class="product-price">₹18,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                 <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -108,8 +128,12 @@
                 <p class="product-price">₹22,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                    <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -122,8 +146,12 @@
                 <p class="product-price">₹2,499</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                     <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -136,22 +164,30 @@
                 <p class="product-price">₹1,299</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                     <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
             <!-- Product 9 -->
             <article class="product-card">
-                <img src="./../images/gaming mouse.avif" alt="Gaming Mouse">
+                <img src="./../images/gamingmouse.avif" alt="Gaming Mouse">
                 <h2 class="product-name">Gaming Mouse</h2>
                 <p class="product-rating">⭐⭐⭐⭐☆ (4.4)</p>
                 <p class="product-desc">RGB wired gaming mouse with high DPI.</p>
                 <p class="product-price">₹999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                   <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -164,8 +200,12 @@
                 <p class="product-price">₹32,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                     <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -178,8 +218,12 @@
                 <p class="product-price">₹15,999</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                     <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
 
@@ -192,10 +236,80 @@
                 <p class="product-price">₹3,499</p>
                 <input type="number" value="1" min="1" class="product-qty">
                 <div class="product-buttons">
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Wishlist</button>
+                    <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+                    Add to Cart
+                </button>
+                <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+                    Wishlist
+                </button>
                 </div>
             </article>
+
+            <!-- Product 13 -->
+<article class="product-card">
+    <img src="./../images/headphone.jpeg" alt="Headphones">
+    <h2 class="product-name">Wireless Headphones</h2>
+    <p class="product-rating">⭐⭐⭐⭐☆ (4.4)</p>
+    <p class="product-desc">Noise cancelling over-ear wireless headphones.</p>
+    <p class="product-price">₹4,999</p>
+    <input type="number" value="1" min="1" class="product-qty">
+    <div class="product-buttons">
+        <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+            Add to Cart
+        </button>
+        <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+            Wishlist
+        </button>
+    </div>
+</article>
+
+<!-- Product 14 -->
+<article class="product-card">
+    <img src="./../images/earbuds .jpg" alt="Earbuds">
+    <h2 class="product-name">Wireless Earbuds</h2>
+    <p class="product-rating">⭐⭐⭐⭐☆ (4.5)</p>
+    <p class="product-desc">Bluetooth earbuds with fast charging case.</p>
+    <p class="product-price">₹2,199</p>
+    <input type="number" value="1" min="1" class="product-qty">
+    <div class="product-buttons">
+        <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">Add to Cart</button>
+        <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">Wishlist</button>
+    </div>
+</article>
+<!-- Product 15-->
+<article class="product-card">
+    <img src="./../images/pendrive.jpg" alt="128GB Pendrive">
+    <h2 class="product-name">128GB USB 3.0 Pendrive</h2>
+    <p class="product-rating">⭐⭐⭐⭐⭐ (4.8)</p>
+    <p class="product-desc">
+        Ultra-fast 128GB USB 3.0 pendrive with shockproof design.
+    </p>
+    <p class="product-price">₹1,199</p>
+    <input type="number" value="1" min="1" class="product-qty">
+    <div class="product-buttons">
+        <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">Add to Cart</button>
+        <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">Wishlist</button>
+    </div>
+</article>
+<!-- Product 22 -->
+<article class="product-card">
+    <img src="./../images/keyboard.jpg" alt="Mechanical Keyboard">
+    <h2 class="product-name">Mechanical Gaming Keyboard</h2>
+    <p class="product-rating">⭐⭐⭐⭐☆ (4.6)</p>
+    <p class="product-desc">
+        RGB backlit mechanical keyboard with blue switches for fast typing and gaming.
+    </p>
+    <p class="product-price">₹2,999</p>
+    <input type="number" value="1" min="1" class="product-qty">
+    <div class="product-buttons">
+        <button class="add-btn" type="button" onclick="alert('Item Added to Cart')">
+            Add to Cart
+        </button>
+        <button class="wishlist-btn" type="button" onclick="alert('Added to Wishlist')">
+            Wishlist
+        </button>
+    </div>
+</article>
 
         </section>
     </body>
