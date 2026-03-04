@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova Store - Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,8 +13,9 @@
     <div class="logo">
         <h2>TechNova Store</h2>
     </div>
+
     <nav>
-        <ul class="nav-link">
+        <ul class="nav-links">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./pages/product.html">Product</a></li>
             <li><a href="./pages/dashboard.html">Dashboard</a></li>
@@ -21,11 +23,10 @@
             <li><a href="./pages/about.html">About</a></li>
             <li><a href="./pages/contact.html">Contact</a></li>
             <li><a href="./pages/login.html">Login</a></li>
-            <li><a href="./pages/sign.html" class="signin-btn">Sign in</a></li>
+            <li><a href="./pages/sign.html" class="signin-btn">Sign In</a></li>
         </ul>
     </nav>
 </header>
-
 
 <!-- ================= HERO SECTION ================= -->
 <section class="hero" id="hero">
@@ -37,19 +38,18 @@
 </section>
 
 <!-- ================= ABOUT SECTION ================= -->
-
 <section class="about">
     <div class="about-container">
 
         <!-- About Image -->
         <div class="about-img">
-            <img src="./images/homepage.jpeg" alt="Our Store">
+            <img src="./images/homepage.jpeg" alt="TechNova Store Interior">
         </div>
 
         <!-- About Welcome Text -->
         <div class="about-text-content">
             <h2>Welcome to TechNova</h2>
-            <p>Buy the latest mobiles, laptops, gadgets, and all electronic devices at the best prices.</p>
+            <p>Buy the latest mobiles, laptops, gadgets, and electronic devices at the best prices.</p>
             <a href="./pages/categories.html" class="link">Shop Now</a>
         </div>
 
@@ -57,10 +57,16 @@
         <div class="about-text">
             <h2>About Our Store</h2>
             <p>
-                <b><i>TechNova</i></b> is your one-stop destination for premium electronics. 
+                <strong><em>TechNova</em></strong> is your one-stop destination for premium electronics. 
                 We provide genuine products, fast delivery, and trusted service.
             </p>
-            <input type="search" id="search" name="search" placeholder="🔍 Search products" readonly class="search">
+            <input 
+                type="search" 
+                id="search" 
+                name="search" 
+                placeholder="🔍 Search products" 
+                readonly 
+                class="search">
         </div>
 
     </div>
@@ -73,5 +79,6 @@
         <p>Email: support@technova.com | Phone: +91 9876543210</p>
     </div>
 </footer>
+
 </body>
 </html>
