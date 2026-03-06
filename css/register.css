@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Page Background */
+
+body{
+ background: linear-gradient(135deg, #2C3E50,#34495E); 
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* Wrapper */
+
+.register-wrapper{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* Register Card */
+
+.register-box{
+background:#FFFFFF;
+width:400px;
+padding:30px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+
+.register-box h2{
+text-align:center;
+color:#2C3E50;
+margin-bottom:20px;
+}
+
+/* Input fields */
+
+.input-group{
+margin-bottom:15px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:5px;
+color:#2C3E50;
+font-weight:500;
+}
+
+.input-group input{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+}
+
+/* Button */
+
+.register-btn{
+width:100%;
+padding:12px;
+background:#3498DB;
+color:#FFFFFF;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover Accent */
+
+.register-btn:hover{
+background:#1ABC9C;
+}
+
+/* Login Link */
+
+.login-link{
+text-align:center;
+margin-top:15px;
+color:#2C3E50;
+}
+
+.login-link a{
+color:#3498DB;
+text-decoration:none;
+}
+
+.login-link a:hover{
+color:#1ABC9C;
+}
+
+/* ================= RESPONSIVE MEDIA QUERY ================= */
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.register-box{
+width:90%;
+padding:25px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.register-box{
+width:100%;
+padding:20px;
+}
+
+.register-box h2{
+font-size:22px;
+}
+
+.input-group input{
+padding:9px;
+}
+
+.register-btn{
+padding:10px;
+font-size:15px;
+}
+
+}
