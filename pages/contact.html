@@ -4,34 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - TechNova Store</title>
-
+<link rel="stylesheet" href="./../css/style.css">
 <link rel="stylesheet" href="./../css/contact.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="./../images/favicon.ico">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<<<<<<< Updated upstream
 <!-- ================= NAVBAR ================= -->
 <header>
     <div class="logo">
+    <a href="./../index.html">
+        <img src="./../images/logo.png" alt="TechNova Store Logo" width="30">
         <h2>TechNova Store</h2>
-    </div>
+    </a>
+</div>
     <nav>
-<<<<<<< HEAD
-        <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./dashborad.html">Product</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./singin.html" class="signup-btn">Sign Up</a></li>
-=======
         <ul class="nav-links">
           <li><a href="./../index.html">Home</a></li>
           <li><a href="./product.html">Product</a></li>
@@ -40,26 +30,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
           <li><a href="./login.html">Login</a></li>
-          <li><a href="./signin.html" class="signin-btn">Sign in</a></li>
->>>>>>> develop
         </ul>
     </nav>
-=======
-<!-- Navbar -->
-
-<header class="navbar">
-
-<h2 class="logo">TechNova</h2>
-
-<nav>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">Contact</a></li>
-</ul>
-</nav>
-
->>>>>>> Stashed changes
 </header>
 
 
@@ -105,14 +77,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <div class="contact-form">
 
 <h2>Send Message</h2>
+<form action="#" method="post">
 
-<form>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="text" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
 
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Your Message"></textarea>
+<textarea name="message" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
 
@@ -189,7 +160,11 @@ src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed">
 <footer class="footer">
 
 <p>© 2026 TechNova Store | Electronics & E-Commerce</p>
-
+<div class="footer-links">
+<a href="./about.html">About</a> |
+<a href="./contact.html">Contact</a> |
+<a href="#">Privacy Policy</a>
+</div>
 </footer>
 
 
