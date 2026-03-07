@@ -1,30 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>TechNova Store- Home</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - TechNova Store</title>
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./../css/contact.css">
+  <link rel="icon" type="image/png" href="./../images/favicon.ico">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
 <!-- ================= NAVBAR ================= -->
 <header>
     <div class="logo">
+    <a href="./../index.html">
+        <img src="./../images/logo.png" alt="TechNova Store Logo" width="30">
         <h2>TechNova Store</h2>
-    </div>
+    </a>
+</div>
     <nav>
-        <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./dashborad.html">Product</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./singup.html" class="signup-btn">Sign Up</a></li>
+        <ul class="nav-links">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./product.html">Product</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./categories.html">Categories</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./login.html">Login</a></li>
         </ul>
     </nav>
 </header>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h1>Contact TechNova Store</h1>
+<p>We are here to help you with electronics products.</p>
+
+</section>
+
+
+<!-- Contact Cards -->
+
+<section class="contact-cards">
+
+<div class="card">
+<i class="fa-solid fa-phone"></i>
+<h3>Phone</h3>
+<p>+91 9876543210</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>support@technova.com</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Location</h3>
+<p>Mumbai, India</p>
+</div>
+
+</section>
+
+
+<!-- Contact Form -->
+
+<section class="contact-section">
+
+<div class="contact-form">
+
+<h2>Send Message</h2>
+<form action="#" method="post">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- Map -->
+
+<section class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-box">
+<h4>How long does delivery take?</h4>
+<p>Delivery usually takes 3-5 business days.</p>
+</div>
+
+<div class="faq-box">
+<h4>Do you provide warranty?</h4>
+<p>Yes, all electronics products include manufacturer warranty.</p>
+</div>
+
+</section>
+
+
+<!-- Social Media -->
+
+<section class="social">
+
+<h2>Follow Us</h2>
+
+<div class="icons">
+
+<a href="#"><i class="fa-brands fa-facebook"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+</div>
+
+</section>
+
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+<h2>Subscribe for Updates</h2>
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+<p>© 2026 TechNova Store | Electronics & E-Commerce</p>
+<div class="footer-links">
+<a href="./about.html">About</a> |
+<a href="./contact.html">Contact</a> |
+<a href="#">Privacy Policy</a>
+</div>
+</footer>
+
 
 </body>
 </html>

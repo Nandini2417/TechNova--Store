@@ -2,29 +2,217 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TechNova Store - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Store - Dashboard</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="images/png" href="./../images/favicon.ico">
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <header>
     <div class="logo">
-        <h2>TechNova Store</h2>
-    </div>
+    <a href="./../index.html">
+        <img src="./../images/logo.png" alt="TechNova Store Logo" width="30">
+         <h2>TechNova Store</h2>
+    </a>
+</div>
     <nav>
-        <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./dashborad.html">Product</a></li>
+        <ul class="nav-link">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
             <li><a href="./categories.html">Categories</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./login.html">Login</a></li>
-            <li><a href="./singup.html" class="signup-btn">Sign Up</a></li>
         </ul>
     </nav>
 </header>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="overview">
+    <h2>Dashboard Overview</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>15</h3>
+            <p>Total Products</p>
+        </div>
+
+        <div class="card">
+            <h3>6</h3>
+            <p>Total Categories</p>
+        </div>
+
+        <div class="card">
+            <h3>28</h3>
+            <p>Total Orders</p>
+        </div>
+
+        <div class="card">
+            <h3>50</h3>
+            <p>Total Users</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ADD PRODUCT ================= -->
+<section class="add-product">
+    <h2>Add New Product</h2>
+
+    <form>
+        <input type="text" placeholder="Product Name" required>
+        <input type="number" placeholder="Price" required>
+
+        <select required>
+            <option>Mobiles</option>
+            <option>Laptops</option>
+            <option>Headphones</option>
+            <option>Accessories</option>
+            <option>Smart TV</option>
+        </select>
+<input type="number" placeholder="Stock Quantity" min="0" required>
+        <input type="file">
+
+        <button type="submit">Add Product</button>
+    </form>
+</section>
+
+<!-- ================= PRODUCT TABLE ================= -->
+<section class="product-list">
+    <h2>Product List</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>iPhone</td>
+                    <td>₹79,999</td>
+                    <td>Mobiles</td>
+                    <td>10</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+<!-- Top Footer -->
+<div class="footer-top">
+
+<div class="footer-column">
+<h3>Get to Know Us</h3>
+<a href="#">About TechNova</a>
+<a href="#">Careers</a>
+<a href="#">Press Releases</a>
+<a href="#">TechNova Science</a>
+</div>
+
+<div class="footer-column">
+<h3>Connect with Us</h3>
+<a href="#">Facebook</a>
+<a href="#">Twitter</a>
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+</div>
+
+<div class="footer-column">
+<h3>Make Money with Us</h3>
+<a href="#">Sell on TechNova</a>
+<a href="#">Become an Affiliate</a>
+<a href="#">Advertise Products</a>
+<a href="#">TechNova Business</a>
+<a href="#">Partner with Us</a>
+</div>
+
+<div class="footer-column">
+<h3>Let Us Help You</h3>
+<a href="#">Your Account</a>
+<a href="#">Returns Centre</a>
+<a href="#">Product Safety</a>
+<a href="#">100% Purchase Protection</a>
+<a href="#">Help</a>
+</div>
+
+</div>
+
+<!-- Middle Footer -->
+<div class="footer-middle">
+
+<h2 class="footer-logo">TechNova</h2>
+
+<div class="footer-options">
+<button>🌐 English</button>
+<button>🇮🇳 India</button>
+</div>
+
+</div>
+
+<!-- Bottom Services -->
+<div class="footer-services">
+
+<div>
+<h4>TechNova Cloud</h4>
+<p>Scalable Cloud Computing Services</p>
+</div>
+
+<div>
+<h4>TechNova Music</h4>
+<p>Stream Millions of Songs</p>
+</div>
+
+<div>
+<h4>TechNova Prime</h4>
+<p>Fast & Free Delivery</p>
+</div>
+
+<div>
+<h4>TechNova Studios</h4>
+<p>Movies, Web Series & More</p>
+</div>
+
+<div>
+<h4>TechNova Devices</h4>
+<p>Smart Gadgets & Accessories</p>
+</div>
+
+<div>
+<h4>TechNova Business</h4>
+<p>Solutions for Businesses</p>
+</div>
+
+</div>
+
+<!-- Footer Legal -->
+<div class="footer-legal">
+
+<a href="#">Conditions of Use</a>
+<a href="#">Privacy Notice</a>
+<a href="#">Interest-Based Ads</a>
+
+<p>© 2026 TechNova Store. All Rights Reserved.</p>
+
+</div>
+
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,157 @@
+/* ================= BODY & LOGIN SECTION ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2C3E50,#34495E); /* Gradient Background */
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ================= LOGIN CONTAINER ================= */
+.login-container {
+ background: #FFFFFF;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ================= BRAND ================= */
+.brand {
+  color: #2C3E50; /* Dark Blue Text */
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #2C3E50;
+}
+
+/* ================= FORM ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2C3E50;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Input Focus */
+input:focus {
+  border-color: #3498DB; /* Button Blue */
+  outline: none;
+  box-shadow: 0 0 6px rgba(52,152,219,0.4);
+}
+
+/* ================= OPTIONS ================= */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #3498DB; /* Button Blue */
+  transition: 0.3s;
+}
+
+.options a:hover {
+  color: #1ABC9C; /* Accent Teal */
+  text-decoration: underline;
+}
+
+/* ================= BUTTON ================= */
+button {
+  padding: 10px;
+  background: #3498DB; /* Button Blue */
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1ABC9C; /* Accent Teal */
+  transform: scale(1.05);
+}
+/* ================= REGISTER SECTION ================= */
+.register-section{
+    text-align:center;
+    margin-top:20px;
+}
+
+.register-section p{
+    margin-bottom:8px;
+}
+
+.register-btn{
+    text-decoration:none;
+    background:#2980B9;
+    color:#FFFFFF;
+    padding:8px 16px;
+    border-radius:5px;
+    display:inline-block;
+}
+
+.register-btn:hover{
+    background:#1ABC9C;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 25px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
