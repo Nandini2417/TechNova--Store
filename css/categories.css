@@ -244,12 +244,11 @@ margin-top:10px;
 font-size:13px;
 color:#ccc;
 }
-/* ================= RESPONSIVE MEDIA QUERIES ================= */
 
 /* Medium screens (tablets) */
 @media (max-width: 992px) {
   .category-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 15px;
     padding: 0 5%;
   }
@@ -270,8 +269,7 @@ color:#ccc;
 /* Small screens (mobile phones) */
 @media (max-width: 768px) {
   .category-container {
-    grid-template-columns: 1fr; /* 1 card per row */
-    gap: 15px;
+    grid-template-columns: 1fr;
     padding: 0 5%;
   }
 
@@ -291,10 +289,10 @@ color:#ccc;
   }
 }
 
-/* Extra small screens (very small phones) */
+/* small phones */
 @media (max-width: 480px) {
   .category-card .category-img {
-    height: 150px; /* slightly smaller image */
+    height: 150px; 
   }
 
   .category-card h3 {
